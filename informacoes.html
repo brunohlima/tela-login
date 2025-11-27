@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Informações do Usuário</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0a0f24, #1a2a6c);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.09);
+      backdrop-filter: blur(12px);
+      padding: 30px;
+      width: 360px;
+      border-radius: 14px;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      animation: fadeIn .6s ease-out;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .info {
+      margin-top: 20px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #8dc4ff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h2>Informações da Conta</h2>
+
+    <div id="informacoes" class="info">
+      Carregando informações...
+    </div>
+  </div>
+
+  <script src="/script2.js" defer></script>
+</body>
+</html>

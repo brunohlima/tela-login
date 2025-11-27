@@ -2,9 +2,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="/script.js" defer></script>
     <title>Formulário Interativo</title>
 </head>
 <body>
@@ -14,9 +14,9 @@
                 <div class="formLogin">
                     <h2>Login</h2>
                     <form>
-                        <input type="email" placeholder="E-mail">
-                        <input type="password" placeholder="Senha">
-                        <button type="submit">Entrar</button>
+                        <input id="lg-email" type="email" placeholder="E-mail">
+                        <input id="lg-password" type="password" placeholder="Senha">
+                        <button id="Entrar" type="submit">Entrar</button>
                     </form>
                 </div>
                 <div class="facaLogin">
@@ -29,11 +29,11 @@
                <div class="formCadastro">
                     <h2>Cadastro</h2>
                     <form>
-                        <input type="text" placeholder="Nome">
-                        <input type="email" placeholder="E-mail">
-                        <input type="password" placeholder="Senha">
-                        <input type="password" placeholder="Confirme a sua senha">
-                        <button type="submit">Cadastrar</button>
+                        <input id="name" type="text" placeholder="Nome">
+                        <input id="email" type="email" placeholder="E-mail">
+                        <input id="senha" type="password" placeholder="Senha">
+                        <input id="confirmaSenha" type="password" placeholder="Confirme a sua senha">
+                        <button id="cadastrar">Cadastrar</button>
                     </form>
                </div>
                <div class="facaCadastro">
@@ -44,5 +44,7 @@
             </div>
         </div>
     </section>
+    <script src="/script.js" defer></script>
+
 </body>
 </html>
